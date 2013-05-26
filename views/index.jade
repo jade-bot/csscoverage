@@ -1,7 +1,7 @@
 extends layout
 
 block head
-  style
+  style.
     .sheet .selectors { display: none; }
 block content
   form(method="GET",action="/")
@@ -18,5 +18,5 @@ block content
               ul
                 li Hits: #{selector.hits.join(', ')}
                 li Misses: #{selector.misses.join(', ')}
-  script
+  script.
     //click title to show selectors
